@@ -1,32 +1,68 @@
+
+
+Sure! Here's an example code for a one-page resume layout using flexbox:
+
+html
+Copy code
 <!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
 
-<html lang="en">
-    <head>
-        <title>My First Chatbot</title>
-        <!-- <link rel="stylesheet" href="style.css"> -->
-    </head>
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
 
-    <body>
-        <header>
-            <center>
-                <h1> First AI Chatbot</h1>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis recusandae, molestiae nesciunt tempora natus iure quae distinctio sint beatae eligendi labore facilis, inventore eius repudiandae? Id aperiam repellat laboriosam obcaecati!</p>
-            </center>
-        </header>
+    .section {
+      margin-bottom: 20px;
+    }
 
-        <!-- <section>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est nemo ipsam natus cum similique pariatur dolor placeat qui! Commodi, sed! Voluptas magnam numquam eum dolore tempora reiciendis ex vel qui.</p>
-        </section> --> Voltage Detactor
+    .section h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
 
-        <script type="module">
-            // alert("hello world");
+    .section p {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
 
-            let num1 = 23; // 64 bit floating point number
-            let num2 = 2; // UTF16 - 16 bit per char
-            let isActive = false; // 1 bit
-
-            console.log(num1+num2
-            );
-        </script>
-    </body>
+    .section:last-child {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="section">
+      <h2>John Doe</h2>
+      <p>Software Developer</p>
+    </div>
+    <div class="section">
+      <h2>Experience</h2>
+      <p>Company A - Software Engineer (2018-2021)</p>
+      <p>Company B - Web Developer (2016-2018)</p>
+    </div>
+    <div class="section">
+      <h2>Education</h2>
+      <p>University XYZ - Bachelor's Degree in Computer Science</p>
+    </div>
+    <div class="section">
+      <h2>Skills</h2>
+      <p>JavaScript, HTML, CSS</p>
+    </div>
+    <div class="section">
+      <h2>Contact</h2>
+      <p>Email: john.doe@example.com</p>
+      <p>Phone: (123) 456-7890</p>
+    </div>
+  </div>
+</body>
 </html>
